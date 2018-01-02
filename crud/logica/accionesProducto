@@ -1,0 +1,24 @@
+public class ManejadorProducto {
+
+    @Override
+    public Cliente crear(Producto cliente) {
+        ClienteDao dao = new ClienteDao();
+        return dao.crear(cliente);
+    }
+
+    @Override
+    public Cliente editar(Producto objeto) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public boolean eliminar(Producto objeto) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public List<Producto> leer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+  
+}

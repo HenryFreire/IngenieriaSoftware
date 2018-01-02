@@ -1,0 +1,9 @@
+public class dibujarFigura implements Figura {
+
+    public  dibujar (Figura figura) {
+        console.log('Figura dibujada ', figura);
+    }
+        
+}
+
+

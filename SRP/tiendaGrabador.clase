@@ -1,0 +1,8 @@
+class grabador {
+    
+    tienda miTienda = new tienda('laptop','dispositivo electronico',800.65, 1);
+
+    public void grabar(tienda miTienda) {
+        // Guarda los datos de la tienda en la base de datos
+    } 
+}

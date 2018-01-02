@@ -1,0 +1,27 @@
+public class Factura {
+    private int id;
+    private Cabecera cabecera;
+
+    public Factura(int id, Cabecera cabecera) {
+        this.id = id;
+        this.cabecera = cabecera;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Cabecera getCabecera() {
+        return cabecera;
+    }
+
+    public void setCabecera(Cabecera cabecera) {
+        this.cabecera = cabecera;
+    }
+    
+    
+}

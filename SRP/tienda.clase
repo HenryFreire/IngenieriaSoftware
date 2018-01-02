@@ -1,0 +1,13 @@
+class tienda {
+    String nombre;
+    String tipo;
+    float precio;
+    int cantidad;
+
+    constructor(String nombre, String tipo, float precio, int cantidad) {
+        this.nombre = nombre;
+        this.tipo = tipo;
+        this.precio = precio;
+        this.cantidad = cantidad;
+    }
+}

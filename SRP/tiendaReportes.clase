@@ -1,0 +1,13 @@
+export class tiendaReporte {
+    public void reporteMensual () {
+        //imprimir reporte
+    }
+
+    public void reportePorDia() {
+        // imprimir reporte
+    }
+
+    public void reporteGanancias() {
+        // imprime reporte
+    }
+}
