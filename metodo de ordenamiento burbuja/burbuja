@@ -1,4 +1,5 @@
 <!doctype html>
+<html>
 <head>
 	<meta charset="utf-8">
 </head>
@@ -12,28 +13,28 @@
  arrayDesordenado=Array(5,9,4,7,3,8,2,1,6);
  
 	function ordenarArray(arrayDesordenado) {
-		for(var i=1;i<miArray.length;i++)
+		for(var i=1;i<arrayDesordenado.length;i++)
 		{
-			for(var j=0;j<(miArray.length-i);j++)
+			for(var j=0;j<(arrayDesordenado.length-i);j++)
 			{
-				if(miArray[j]>miArray[j+1])
+				if(arrayDesordenado[j]>arrayDesordenado[j+1])
 				{
-					k=miArray[j+1];
-					miArray[j+1]=miArray[j];
-					miArray[j]=k;
+					auxiliar=arrayDesordenado[j+1];
+					arrayDesordenado[j+1]=arrayDesordenado[j];
+					arrayDesordenado[j]=auxiliar;
 				}
 			}
 		}
-		return miArray;
+		return arrayDesordenado;
 	}
  
 	
  
  function mostrarArrayDesordenado() {
    document.write("Valores Iniciales<br>");
-   for(var i=0;i<miArray.length;i++)
+   for(var i=0;i<arrayDesordenado.length;i++)
    {
-    document.write(miArray[i]+"<br>");
+    document.write(arrayDesordenado[i]+"<br>");
    }
  }  
  
@@ -42,7 +43,7 @@
    arrayOrdenado=ordenarArray(arrayDesordenado);
    document.write("Valores ordenados<br>");
    for(i=0;i<arrayOrdenado.length;i++){
-    document.write(arrayB[i]+"<br>");
+    document.write(arrayOrdenado[i]+"<br>");
    }
  }
  
