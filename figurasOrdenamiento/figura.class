@@ -1,27 +1,26 @@
 public class Figuras {
 
-    public int triangulo(){
-        return 1;
+    String nombre ;
+    int numero;
+    
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
     
-    public int cuadrado(){
-        return 2;
+    public int getNumero() {
+        return numero;
     }
-
-    public int rectangulo(){
-        return 3;
+    
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
-
-    public int pentagono(){
-        return 4;
+    
+      public Figuras(String nombre, int numero) {
+        this.nombre = nombre;
+        this.numero = numero;
     }
-
-    public int exagono(){
-        return 5;
-    }
-
-    public int circulo(){
-        return 6;
-    }
-
+    
  }
