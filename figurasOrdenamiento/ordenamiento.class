@@ -1,6 +1,6 @@
-public class ordenamiento implements Figura {
+public class ordenamiento  {
 
-    public Array ordenar (Figuras[] formas, Strind tipoOrden){
+    public Array ordenar (Figuras[] formas, String tipoOrden){
        if(tipoOrden === "desc") {
             for(int i = formas.size() - 1; i > 0 i--){
                  dibujar(formas[i]);   
