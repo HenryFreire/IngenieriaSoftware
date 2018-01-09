@@ -1,7 +1,7 @@
 public class main {
 
     public void main (){
-        Ordenamiento orden = new Ordenamiento;
+        ordenamiento orden = new ordenamiento;
         Array<Integer> lista = orden.ordenar(formas, des)
     }
     
