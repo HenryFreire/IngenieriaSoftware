@@ -1,10 +1,7 @@
 public class dibujarFigura implements Figura {
 
-    public  dibujar (Figura[] figura) {
-        for(var i=0;i<figura.length;i++) {
-            console.log('Figura dibujada ', figura[i]);
-        }
-      
+    public  dibujar (Figura figura) {
+            console.log('Figura dibujada ', figura);
     }
         
 }
