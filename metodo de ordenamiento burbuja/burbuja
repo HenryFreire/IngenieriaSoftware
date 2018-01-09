@@ -1,71 +1,55 @@
-
-
- #include <stdio.h>
- #include <stdlib.h>
- #include <time.h>
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+</head>
  
- #define V_SIZE 10
+<body>
+	<h1>Metodo burbuja en JavaScript</h1>
  
- int cont;
+	<script>
  
- // Herramientas
- void gen_rand(int v[], int size);
- void print_vect(int v[], int size);
- void swap(int v[], int o, int d);
  
- //Algoritmos
- void bubble_sort(int v[], int size);
+ arrayDesordenado=Array(5,9,4,7,3,8,2,1,6);
  
- int main(int argc, char *argv[])
- {
-  int v[V_SIZE];
+	function ordenarArray(arrayDesordenado) {
+		for(var i=1;i<miArray.length;i++)
+		{
+			for(var j=0;j<(miArray.length-i);j++)
+			{
+				if(miArray[j]>miArray[j+1])
+				{
+					k=miArray[j+1];
+					miArray[j+1]=miArray[j];
+					miArray[j]=k;
+				}
+			}
+		}
+		return miArray;
+	}
  
-  printf("############ Ordenando con Burbuja ############\n");
-  gen_rand(v, V_SIZE);
-  printf("No. Aleatorios: ");
-  print_vect(v, V_SIZE);
+	
  
-  bubble_sort(v, V_SIZE);
-  printf("No. Ordenados : ");
+ function mostrarArrayDesordenado() {
+   document.write("Valores Iniciales<br>");
+   for(var i=0;i<miArray.length;i++)
+   {
+    document.write(miArray[i]+"<br>");
+   }
+ }  
  
-  print_vect(v, V_SIZE);
-  return 0;
+	
+ function mostrarArrayOrdenado()	{
+   arrayOrdenado=ordenarArray(arrayDesordenado);
+   document.write("Valores ordenados<br>");
+   for(i=0;i<arrayOrdenado.length;i++){
+    document.write(arrayB[i]+"<br>");
+   }
  }
  
+ mostrarArrayDesordenado();
+ mostrarArrayOrdenado();
  
- void gen_rand(int v[], int size)
- {
-  int i;
+	</script>
  
-  cont = cont + 1;
-  srand(time(NULL)*cont);
-  for(i=0; i<size; i++)
-   v[i]=rand()%100;
- }
- 
- 
- void print_vect(int v[], int size)
- {
-  int i;
-  printf("[ ");
-  for(i=0; i<size; i++)
-   printf("%d ", v[i]);
-  printf("]\n");
- }
- 
- void swap(int v[], int o, int d)
- {
-  int temp;
-  temp=v[d];
-  v[d]=v[o];
-  v[o]=temp;
- }
- 
- void bubble_sort(int v[], int size)
- {
-  int i, j;
-  for (j=0; j<size; j++)
-   for (i=0; i<size-1; i++)
-    if(v[i]>v[i+1])
-     swap(v, i, i+1);
- }
+</body>
+</html>
