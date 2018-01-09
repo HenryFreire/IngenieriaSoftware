@@ -1,8 +1,20 @@
 public class main {
 
     public void main (){
+    
+        figura[] listaFiguras = new figura[3];
+        figura miFigura1 = new figura('Cuadrado', 1);
+        figura miFigura2 = new figura('Cuadrado', 2);
+        figura miFigura3 = new figura('Cuadrado', 3);
+        
+        listaFiguras[0] = miFigura1;
+        listaFiguras[1] = miFigura2;
+        listaFiguras[2] = miFigura3;
+        
+        
+        
         ordenamiento orden = new ordenamiento;
-        Array<Integer> lista = orden.ordenar(formas, des)
+        orden.ordenar(listaFiguras, 'desc');
     }
     
 }
